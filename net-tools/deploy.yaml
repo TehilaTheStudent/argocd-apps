@@ -20,9 +20,9 @@ spec:
     spec:
       containers:
       - image: tehilathestudent/net-tools
-        command: sleep
+        command: "sleep"
         args: 
-         - infinity
+         - "infinity"
         name: net-tools
         resources: {}
 status: {}
