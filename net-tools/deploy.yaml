@@ -1,0 +1,25 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: net-tools
+  name: net-tools
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: net-tools
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: net-tools
+    spec:
+      containers:
+      - image: tehilethestudent/net-tools
+        name: net-tools
+        resources: {}
+status: {}
