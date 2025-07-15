@@ -19,7 +19,7 @@ spec:
         app: net-tools
     spec:
       containers:
-      - image: tehilethestudent/net-tools
+      - image: tehilathestudent/net-tools
         name: net-tools
         resources: {}
 status: {}
