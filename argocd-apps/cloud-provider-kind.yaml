@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: net-tools-reaacg-go-server-see-iptables
+  name: cloud-provider-kind
 spec:
   destination:
-    namespace: net-tools--in-multi-node
-    server: https://7.182.101.79:30023
+    namespace:
+    server: https://7.182.101.79:30024
   project: default
   source:
-    path: net-tools
+    path: cloud-provider-kind
     repoURL: https://github.com/TehilaTheStudent/argocd-apps.git
     targetRevision: HEAD
   syncPolicy:
