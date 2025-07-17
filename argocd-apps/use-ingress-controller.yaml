@@ -4,6 +4,7 @@ metadata:
   name:  use-ingress-controller
 spec:
   destination:
+    namespace: use-ingress-controller
     server: https://7.182.101.79:30024
   project: default
   source:
