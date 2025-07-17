@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: services-go-server-calico
-  namespace: go-server
+  namespace: codearts
 spec:
   destination:
     namespace: services-go-server-calico
