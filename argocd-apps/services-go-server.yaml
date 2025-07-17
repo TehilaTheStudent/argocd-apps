@@ -1,7 +1,6 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  generation: 80
   name: services-go-server-calico
   namespace: codearts
 spec:
