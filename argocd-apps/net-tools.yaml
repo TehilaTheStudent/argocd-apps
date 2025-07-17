@@ -6,7 +6,7 @@ metadata:
 spec:
   destination:
     namespace: net-tools--in-multi-node
-    server: https://7.182.101.79:300213
+    server: https://7.182.101.79:30023
   project: default
   source:
     path: net-tools
