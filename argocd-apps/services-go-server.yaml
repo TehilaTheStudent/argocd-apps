@@ -7,7 +7,7 @@ metadata:
 spec:
   destination:
     namespace: services-go-server-calico
-    server: https://7.182.101.79:30022
+    server: https://7.182.101.79:30023
   project: learn-services
   source:
     path: services/go-server
