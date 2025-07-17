@@ -4,7 +4,7 @@ metadata:
   name: cloud-provider-kind
 spec:
   destination:
-    namespace:
+    namespace: cloud-provider-kind
     server: https://7.182.101.79:30024
   project: default
   source:
