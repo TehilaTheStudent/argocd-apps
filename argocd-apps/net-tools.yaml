@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: net-tools-reaacg-go-server-see-iptables
-  namespace: codearts
+  namespace: net-tools
 spec:
   destination:
     namespace: net-tools--in-multi-node
