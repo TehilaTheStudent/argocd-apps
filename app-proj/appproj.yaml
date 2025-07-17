@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: sample-proj
+  namespace: codearts
+spec:
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
+  description: Project sample
+  destinations:
+  - namespace: '*'
+    server: '*'
+  sourceRepos:
+  - '*'
