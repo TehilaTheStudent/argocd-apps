@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: net-tools
+  namespace: net-tools
+spec:
+  destination:
+    namespace: net-tools
+    server: https://7.182.101.79:300213
+  project: default
+  source:
+    path: net-tools
+    repoURL: https://github.com/TehilaTheStudent/argocd-apps.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true
