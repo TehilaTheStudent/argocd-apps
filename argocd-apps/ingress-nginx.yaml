@@ -1,18 +1,18 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: ingress-nginx
-spec:
-  destination:
-    server: https://7.182.101.79:30024
-  project: default
-  source:
-    path: ingress-nginx
-    repoURL: https://github.com/TehilaTheStudent/argocd-apps.git
-    targetRevision: HEAD
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-    syncOptions:
-      - CreateNamespace=true
+#apiVersion: argoproj.io/v1alpha1
+#kind: Application
+#metadata:
+#  name: ingress-nginx
+#spec:
+#  destination:
+#    server: https://7.182.101.79:30024
+#  project: default
+#  source:
+#    path: ingress-nginx
+#    repoURL: https://github.com/TehilaTheStudent/argocd-apps.git
+#    targetRevision: HEAD
+#  syncPolicy:
+#    automated:
+#      prune: true
+#      selfHeal: true
+#    syncOptions:
+#      - CreateNamespace=true
