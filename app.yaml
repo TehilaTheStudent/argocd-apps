@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: provider-github
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/TehilaTheStudent/argocd-apps.git
+    path: argocd-apps
+    targetRevision: HEAD
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd-apps
+  syncPolicy:
+    automated: {}
