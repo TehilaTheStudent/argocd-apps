@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: xrd-codearts
+  name: crossplane-installation
 spec:
   destination:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: crossplane-xrd/codearts
+    path: crossplane-germany
     repoURL: https://codehub.devcloud.ap-southeast-3.huaweicloud.com/b3f25c9ab5cb457b97aa19bbc06b2743/crossplane-demo.git
     targetRevision: HEAD
   syncPolicy:
