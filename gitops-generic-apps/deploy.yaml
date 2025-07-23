@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: deploy1
 spec:
-  progressDeadlineSeconds: 10
+#  progressDeadlineSeconds: 10
   replicas: 2
   selector:
     matchLabels:
